@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>SVNT Construction </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap 4-->
+    <link rel="stylesheet" href="{{ url_for ('static', filename = 'css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!--icons-->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
+    <link rel="stylesheet" href="{{ url_for ('static', filename = 'js/countdown/jquery.countdown.css') }}"/>
+</head>
+<body>
+<!--hero section-->
+<section class="bg-white hero p-0">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-5 bg-light text-center col-fixed">
+                <h2 class="pt-4 h2"><span class="text-green">SVNT Construction MMC</span></h2>
+                <h3>Digital Design Agency</h3>
+                <p class="mt-4">
+                    We build beautiful things for <br/>creative people.
+                </p>
+                <div class="launch-text">We're launching soon.</div>
+                <!--contact form-->
+                <section id="contact-form" class="pt-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 mx-auto text-center">
+                                <h2 class="text-primary pb-3">Bizimlə əlaqə</h2>
+                                <p class="text-muted">Please fill out the form below to contact us.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8 mx-auto">
+                                <form action="/submit-form" method="POST">
+                                    <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input type="text" class="form-control" id="name" name="name"
+                                               placeholder="Your name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" id="email" name="email"
+                                               placeholder="Your email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">Message</label>
+                                        <textarea class="form-control" id="message" name="message" rows="4"
+                                                  placeholder="Your message" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Send Message</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-sm-7 offset-sm-5 px-0 py-5">
+                <!--Why This Domain-->
+                <section class="pt-4">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-8 mx-auto text-center">
+                                <h2 class="text-primary pb-3">Haqqımızda</h2>
+                                <p class="text-muted">
+                                    SVNT Construction olaraq, uzun illərin təcrübəsi və peşəkarlığı ilə inşaat
+                                    sektorunda öncül mövqe tuturuq. Əsas fəaliyyət sahələrimizə qaz xətlərinin
+                                    çəkilməsi, qaz layihələrinin hazırlanması, yükqaldırıcı kranların sökülüb yenidən
+                                    qurulması və liftlərin quraşdırılması daxildir. Mütəxəssis komandamız və qabaqcıl
+                                    texnologiyalarımız sayəsində hər bir layihəni təhlükəsizlik, etibarlılıq və
+                                    mükəmməlliklə həyata keçiririk.
+
+                                    Bizim üçün hər bir müştərinin məmnuniyyəti ön plandadır və layihələrimizi
+                                    müştərilərimizin ehtiyaclarına uyğun şəkildə fərdi yanaşmalarla icra edirik. SVNT
+                                    Construction olaraq, inşaatın müxtəlif sahələrində keyfiyyətli və dayanıqlı həllər
+                                    təqdim edirik, müştərilərimizin təhlükəsizliyini və uğurunu təmin etmək üçün
+                                    çalışırıq. Təcrübəmiz və yüksək peşəkarlığımızla, gələcəyə yönəlik innovativ
+                                    layihələr həyata keçiririk.
+
+                                    Bizi seçərək, inşaat sahəsində etibarlı tərəfdaş tapmış olacaqsınız.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row d-md-flex mt-4">
+                            <div class="col-sm-4 mt-2 text-center">
+                                <p><em class="ion-code-working icon-md text-primary"></em></p>
+                                <h4>Qazlalaşdırma</h4>
+                                <p class="text-muted">Qaz kəmərlərinin çəkilməsi</p>
+                            </div>
+                            <div class="col-sm-4 mt-2 text-center">
+                                <p><em class="ion-ios-photos-outline icon-md text-primary"></em></p>
+                                <h4>Qülləli kran</h4>
+                                <p class="text-muted">Qülləli kranların sökülməsi və quraşdırılması</p>
+                            </div>
+                            <div class="col-sm-4 mt-2 text-center">
+                                <p><em class="ion-help-buoy icon-md text-primary"></em></p>
+                                <h4>Liftlər</h4>
+                                <p class="text-muted">Liftlərin quraşdırılması</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--team-->
+                <section id="team">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-8 mx-auto text-center">
+                                <h2 class="text-primary pb-3">Our Team</h2>
+                                <p class="text-muted">
+                                    We're a team of three people.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row d-md-flex mt-4 text-center">
+                            <div class="col-sm-4 mt-2 wow fadeInLeft">
+                                <div class="card border-none">
+                                    <div class="card-body">
+                                        <img src="{{ url_for ('static', filename = 'img/team-1.jpg') }}" alt="Male"
+                                             class="img-team img-fluid rounded-circle"/>
+                                        <h5 class="card-title pt-4">John Deo</h5>
+                                        <p class="card-text text-muted">App Designer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 mt-2 wow fadeIn">
+                                <div class="card border-none">
+                                    <div class="card-body">
+                                        <img src="{{ url_for ('static', filename = 'img/team-2.jpg') }}" alt="Male"
+                                             class="img-team img-fluid rounded-circle"/>
+                                        <h5 class="card-title pt-4">Brandon Lee</h5>
+                                        <p class="card-text text-muted">Ionic Developer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 mt-2 wow fadeInRight">
+                                <div class="card border-none">
+                                    <div class="card-body">
+                                        <img src="{{ url_for ('static', filename = 'img/team-3.jpg') }}" alt="Male"
+                                             class="img-team img-fluid rounded-circle"/>
+                                        <h5 class="card-title pt-4">Inza Fererri</h5>
+                                        <p class="card-text text-muted">Android Developer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--contact-->
+                <section class="p-0" id="contact">
+                    <div class="container">
+                        <div class="row d-md-flex text-primary text-center">
+                            <div class="col-sm-4 p-5">
+                                <p><em class="ion-ios-telephone-outline icon-md"></em></p>
+                                <h5>+92 5456 87595</h5>
+                            </div>
+                            <div class="col-sm-4 p-5">
+                                <p><em class="ion-ios-email-outline icon-md"></em></p>
+                                <h5>hi@syrup.io</h5>
+                            </div>
+                            <div class="col-sm-4 p-5">
+                                <p><em class="ion-ios-location-outline icon-md"></em></p>
+                                <h5>Lahore, Pakistan</h5>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--footer-->
+                <section class="mt-2">
+                    <div class="container">
+                        <div class="row mr-5 ml-5">
+                            <div class="col-sm-12">
+                                <p class="text-muted text-center">
+                                    &copy; 2019 Syrup Theme - All Rights Reserved
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js')"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+<script src="{{ url_for ('static', filename = 'js/countdown/jquery.countdown.min.js') }}"></script>
+<script src="{{ url_for ('static', filename = 'js/scripts.js') }}"></script>
+</body>
+</html>
